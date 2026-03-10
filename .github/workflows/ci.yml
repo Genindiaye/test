@@ -3,7 +3,7 @@ name: CI - Pipeline Informatif
 on:
   push:
     branches:
-      - variables
+      - main
 
 
 jobs:
@@ -31,4 +31,3 @@ jobs:
         run:
           echo "Variable d'environnement pour l'étape 3"
           echo "STEP3= ${{ secrets.STEP3 }}"
-          
